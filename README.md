@@ -14,6 +14,16 @@ The code is built using React-Native and running code locally requires a Mac or 
 - Install [Node.js](https://nodejs.org) **version 10 (latest stable) and yarn@1 (latest)**
     - If you are using [nvm](https://github.com/creationix/nvm#installation) (recommended) running `nvm use` will automatically choose the right node version for you.
 
+- Install `xcode-select`
+```
+xcode-select --install
+```
+
+- Install `watchman`
+```
+brew install watchman
+```
+
 - Before starting, you need to install React Native dependencies:
     - [MacOs](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies-1)
     - [Linux](https://facebook.github.io/react-native/docs/getting-started.html#installing-dependencies-2)
@@ -30,10 +40,10 @@ yarn install
 yarn start:android
 ```
 
-- Running the app on iOS:
-
+- Running the app on iOS.:
+> This needs to be done at-least once before you can start building using xcode.
 ```bash
-yarn start:ios
+yarn start:ios:device
 ```
 
 ### Running tests:

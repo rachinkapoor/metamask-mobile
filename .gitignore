@@ -35,6 +35,11 @@ android/.project
 android/app/.project
 android/app/bin/
 
+# ios
+ios/Carthage
+ios/Cartfile.resolved
+ios/Crashlytics
+
 # node.js
 node_modules/
 npm-debug.log
